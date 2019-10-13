@@ -1,0 +1,16 @@
+
+public class sistemaSolar {
+	
+    public static void main(String[] args) {
+    	
+    	Estrella sol = new Estrella (9, 16, 20, 300);
+    	System.out.println(sol.energia);
+    	cuerpoplanetario tierra = new cuerpoplanetario(30,40,50,9.8,"Sólido");
+    	System.out.println(tierra.composicion);
+    	satelite luna = new satelite (8,15,14,6.5,"Rocoso",tierra);
+    	System.out.println(luna.orbita);
+
+    }
+
+
+}

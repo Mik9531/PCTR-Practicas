@@ -1,0 +1,16 @@
+
+public class hebra extends Thread {
+	
+	public hebra () {};
+	
+	static int n = 0;
+	int veces;
+	boolean tipo;
+	
+	public hebra (boolean tipo, int num) {
+		
+		this.tipo=tipo;
+		this.veces=num;
+	}
+
+}

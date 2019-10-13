@@ -1,0 +1,59 @@
+
+import java.util.*;
+
+public class intDefinidaMonteCarlo {
+	
+    public static void main(String[] args) {
+    	
+    	int aciertos, puntos = 0;
+    	double x, y;
+    	Random r = new Random();
+    	Scanner s = new Scanner (System.in);
+    	System.out.println("¿Cuantos puntos se emplearán?");
+    	puntos = s.nextInt();
+    	System.out.println("¿Qué función desea calcular?");
+    	System.out.println("1.- f(x) = sin");
+    	System.out.println("2.- f(x) = x");
+    	
+    	int funcion = s.nextInt();
+ 
+    	
+    	switch (funcion) {
+    	
+    	case 1:
+    		for (int i=0; i<= puntos; i++) {
+    			x = r.nextDouble();
+    			y = r.nextDouble();
+    		
+    			if (Math.sin(x) >= y) 
+    				aciertos++;
+    		}
+    			System.out.println(aciertos/puntos);
+    		break;
+    	
+    	case 2:
+    		for (int i=0; i<= puntos; i++) {
+    			x = r.nextDouble();
+    			y = r.nextDouble();
+    		
+    			if (x >= y) 
+    				aciertos++;
+    		}
+    			System.out.println(aciertos/puntos);
+    		break;
+    	}
+    	
+    }
+    
+}
+    	
+
+    		
+    	
+    	
+    	
+    	
+    
+    
+
+

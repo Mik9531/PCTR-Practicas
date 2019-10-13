@@ -1,0 +1,13 @@
+
+public class Ejemplo_Hilos1 {
+
+	public Ejemplo_Hilos1(int Tope) {T = Tope;}
+
+	public void run() 
+	{
+		for (int i = 1; i <= T; i++)
+		System.out.println(i); //aqui comportamiento del
+	} //hilo deseado
+
+	private int T;
+}

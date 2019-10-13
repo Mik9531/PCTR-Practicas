@@ -1,0 +1,11 @@
+
+public class sistemaSolar {
+	
+    public static void main(String[] args) {
+    	
+    	Estrella sol = new Estrella (9, 16, 20, 300);
+    	System.out.println()
+    }
+
+
+}

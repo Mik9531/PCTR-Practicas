@@ -1,0 +1,41 @@
+
+import java.util.*;
+
+public class intDefinidaMonteCarlo {
+	
+    public static void main(String[] args) {
+    	
+    	
+    	
+    	Scanner s = new Scanner (System.in);
+    	System.out.println("¿Qué función desea calcular?");
+    	System.out.println("1.- f(x) = sin");
+    	System.out.println("2.- f(x) = x");
+    	int puntos = s.nextInt();
+    	int funcion = s.nextInt();
+ 
+    	
+    	switch (funcion) {
+    	
+    	case 1:
+    		CalcularSeno();
+    		break;
+    	
+    	case 2:
+    		CalcularX();
+    		break;
+    	}
+    	
+    	void CalcularSeno() {
+    		
+    		
+    		
+    		
+    	}
+    	
+    	
+    	
+    }
+    
+}
+

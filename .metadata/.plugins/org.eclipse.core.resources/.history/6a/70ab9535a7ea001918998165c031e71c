@@ -1,0 +1,16 @@
+
+public class Estrella extends cuerpoastrofisico {
+	
+	public Estrella() {}
+	
+	public Estrella(double e) {
+		super(v,d,m);
+		this.energia=e;
+	}
+	
+	double getEnergia() {return this.energia;}
+	void setEnergia(double e) {this.energia=e;}
+	
+	protected double energia;
+
+}

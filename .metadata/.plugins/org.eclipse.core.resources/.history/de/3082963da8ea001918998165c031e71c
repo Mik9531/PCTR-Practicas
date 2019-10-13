@@ -1,0 +1,12 @@
+
+public class cuerpoplanetario extends cuerpoastrofisico {
+	
+	public cuerpoplanetario () {}
+	
+	public cuerpoplanetario(double v, double d, double m, double g, String c) {
+		super(v, d, m);
+		this.gravedad=g;
+		this.composicion=c;
+	}
+
+}
