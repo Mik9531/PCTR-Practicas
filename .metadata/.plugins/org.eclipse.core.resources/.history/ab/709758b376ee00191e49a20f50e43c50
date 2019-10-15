@@ -1,0 +1,40 @@
+// Miguel Afán Espinosa
+// Practica 3
+// Cajero.java
+
+
+public class Cajero implements Runnable{
+	boolean op;
+	private static double dinero=0;
+	private static CuentaBanca Tarjeta = new CuentaBanca(123,10000);
+
+	/**Constructor
+	 * @param recibe el parametro opcion de tipo booleano para determinar  si reintegrar o depositar
+	 * @param recibe el parametro dinero correspondiente al saldo que reintegremos o depositaremos
+	 */
+
+	
+public Cajero(boolean opcion, double dinero){
+	this.op=op;
+	this.dinero=dinero;
+}
+
+
+public void run(){
+	if(op){
+		Tarjeta.Deposito(dinero);
+	}
+	else{
+		Tarjeta.Reintegro(dinero);
+	}
+}
+
+/**Metodo para mostrar por pantalla el saldo 
+ * 
+ */
+
+public static void show(){
+ System.out.println("Saldo: "+Tarjeta.Saldo());
+}
+
+}

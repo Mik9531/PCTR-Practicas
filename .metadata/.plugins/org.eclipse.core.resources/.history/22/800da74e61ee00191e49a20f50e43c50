@@ -1,0 +1,63 @@
+/** 
+ * @author Miguel Afán Espinosa
+ * @version 1.0
+ * Esta clase realiza el escalado de un vector de forma secuencial.
+*/
+
+import java.util.*;
+
+
+public class escalaVPar extends Thread{
+	 int inicio,fin;
+	static double n;
+	public escalaVPar (int inicio,int fin){
+		this.inicio=inicio;
+		this.fin=fin;
+		
+	}
+	
+	public void run(){
+		double [] vector= new double[10000000];
+		 
+			for (int i=0;i<vector.length;i++){
+				vector[i]=Math.random();
+			}
+			for (int i=0;i<10000000;i++)	{
+			
+				 System.out.println("El resultado es: "+vector[i]*n);
+	}
+	}
+	
+	/** Main
+	 * @param args 
+	 * @throws InterruptedException
+	 */
+	
+	public static void main(String[] args)throws Exception{
+		
+		System.out.println("Introduzca el escalar: ");
+	    Scanner s = new Scanner (System.in);
+		n = s.nextDouble();
+		
+		escalaVPar h1 = new escalaVPar(0,2499999);
+		escalaVPar h2 = new escalaVPar(25000000,49999999);
+		escalaVPar h3 = new escalaVPar(50000000,74999999);
+		escalaVPar h4 = new escalaVPar(75000000,99999999);
+	  
+		h1.start();
+		h2.start();
+		h3.start();
+		h4.start();
+		h1.join();
+		h2.join();
+		h3.join();
+		h4.join();
+		
+		}
+	
+}
+//Supuestos
+//cores=4
+//los hilos seran:
+//h1=new h(0,24)
+//h2=new h(25,49)...

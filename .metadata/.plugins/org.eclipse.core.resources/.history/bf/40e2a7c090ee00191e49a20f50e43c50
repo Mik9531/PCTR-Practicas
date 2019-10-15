@@ -1,0 +1,41 @@
+/** 
+ * @author Miguel Afán Espinosa
+ * @version 1.0
+ * Clase  que modela una Cuenta corriente.
+*/
+
+public class cuentaCorrienta{
+	
+	private int Codigo;      
+	private double Saldo;   
+
+	public cuentaCorrienta (){} 
+  
+	public cuentaCorrienta(int id, double disponible){ 
+		this.Codigo_Cuenta=id;
+		this.Saldo_Cuenta=disponible;
+	}
+  
+	public double getSaldo() {return this.Saldo_Cuenta;}
+  
+	public int getCodigo () {return this.Codigo_Cuenta;}
+
+	public void setDeposito (double Cantidad){ 
+		
+		if (Saldo_Cuenta>0)
+			Saldo_Cuenta=Saldo+Cantidad;
+  }
+  
+  public boolean setReintegro (double Cantidad){
+	  
+	  if((Cantidad <=0)||(Cantidad>Saldo))
+		  return false;
+	  else{
+		  Saldo_Cuenta=Saldo-Cantidad;
+		  return true;          
+       }
+  }
+
+}
+
+

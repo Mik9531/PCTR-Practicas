@@ -1,0 +1,33 @@
+
+public class tareaRunnable implements Runnable {
+
+	public tareaRunnable () {};
+	
+	int n = 0;
+	int veces;
+	boolean tipo;
+	
+	public tareaRunnable (boolean tipo, int num) {
+		
+		this.tipo=tipo;
+		this.veces=num;
+		
+	}
+	
+	public void run() {
+		
+		if (tipo) {
+			for (int i = 0; i < veces; i++)
+				n++;
+				System.out.println(n);
+		} else {
+			for (int j=0; j < veces; j++)
+				n--;
+		}
+		
+	}
+	
+	int getNum () {return this.n;}
+	
+	
+}

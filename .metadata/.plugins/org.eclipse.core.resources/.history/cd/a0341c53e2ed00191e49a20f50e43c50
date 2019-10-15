@@ -1,0 +1,15 @@
+
+public class tareaRunnable implements Runnable {
+
+	public tareaRunnable () {};
+	
+	int n = 0;
+	int veces;
+	boolean tipo;
+	
+	int getNum () {return this.n;}
+	
+	
+	
+	
+}
