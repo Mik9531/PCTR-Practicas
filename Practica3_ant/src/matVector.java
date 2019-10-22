@@ -1,7 +1,4 @@
-/**
-* Programa que multiplica una matriz por un vector manualmente o de manera aleatoria
-* @author Juan Jose Garcia
-*/
+
 
 import java.util.*;
 

@@ -26,6 +26,7 @@ public class Usa_tareaRunnable {
 		tareaRunnable hebra2 = new tareaRunnable(false, num);
 		new Thread(hebra1).start();
 		new Thread(hebra2).start();
+		
 
 		System.out.println("El numero es: " + hebras.getN());
 

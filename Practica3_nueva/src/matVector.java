@@ -1,3 +1,5 @@
+import java.util.Date;
+
 /**
  * @author Miguel Afán Espinosa
  * @version 1.0 Esta clase realiza la multiplicacion de una matriz de 10^6
@@ -7,25 +9,25 @@
 public class matVector {
 
 	static int suma = 0;
-	public static int[][] matriz = new int[100000][100000];
-	public static int[] columna = new int[100000];
-	public static int[] resultado = new int[100000];
+	public static int[][] matriz = new int[10000][10000];
+	public static int[] columna = new int[10000];
+	public static int[] resultado = new int[10000];
 
 	public static void main(String[] args) {
 
+		Date d = new Date();
+		long inicCronom = System.currentTimeMillis(); // se prepara el cronometro
+		d.setTime(inicCronom); // se activa el cronometro
+
 		for (int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz.length; j++) {
-				matriz[i][j] = 1;
+				matriz[i][j] = (int) (Math.random() * 1000);
 			}
 		}
 
-
-
 		for (int i = 0; i < columna.length; i++) {
-			columna[i] = 1;
+			columna[i] = (int) (Math.random() * 100);
 		}
-
-
 
 		for (int i = 0; i < matriz.length; i++) {
 
@@ -44,6 +46,11 @@ public class matVector {
 		for (int i = 0; i < resultado.length; i++) {
 			System.out.print("|" + resultado[i] + "|\n");
 		}
+
+		System.out.println("");
+		long finCronom = System.currentTimeMillis(); // se para el cronometro
+		d.setTime(finCronom);
+		System.out.println("Acabando trabajo tras " + (finCronom - inicCronom) + " milisegundos");
 
 	}
 

@@ -1,3 +1,5 @@
+import java.util.Date;
+
 /**
  * @author Miguel Afán Espinosa
  * @version 1.0 Esta clase realiza el productor escalar de dos vectores de forma
@@ -46,7 +48,9 @@ public class prodEscalarParalelo extends Thread {
 
 	public static void main(String[] args) throws Exception {
 
-		long startTime = System.currentTimeMillis(); // Comienzo tiempo de ejecucion
+		Date d = new Date();
+		long inicCronom = System.currentTimeMillis(); // se prepara el cronometro
+		d.setTime(inicCronom); // se activa el cronometro
 
 		prodEscalarParalelo h1 = new prodEscalarParalelo(0, 0, 99999);
 		prodEscalarParalelo h2 = new prodEscalarParalelo(1, 100000, 199999);
@@ -87,9 +91,11 @@ public class prodEscalarParalelo extends Thread {
 
 		System.out.println("El productor escalar es: " + resultadoFinal);
 
-		long stopTime = System.currentTimeMillis(); // Fin del tiempo de ejecucion.
-		long elapsedTime = stopTime - startTime;
-		System.out.println(elapsedTime);
+		System.out.println("");
+
+		long finCronom = System.currentTimeMillis(); // se para el cronometro
+		d.setTime(finCronom);
+		System.out.println("Acabando trabajo tras " + (finCronom - inicCronom) + " milisegundos");
 	}
 
 }

@@ -1,15 +1,19 @@
+import java.util.Date;
 
 class Cronometro {
 	public static void main(String[] args) {
 
-		long startTime = System.currentTimeMillis();
+		Date d = new Date();
+		long inicCronom = System.currentTimeMillis(); // se prepara el cronometro
+		d.setTime(inicCronom); // se activa el cronometro
 
 		// Comienzo código
 
 		// Fin Código
 
-		long stopTime = System.currentTimeMillis();
-		long elapsedTime = stopTime - startTime;
-		System.out.println(elapsedTime);
+		System.out.println("");
+		long finCronom = System.currentTimeMillis(); // se para el cronometro
+		d.setTime(finCronom);
+		System.out.println("Acabando trabajo tras " + (finCronom - inicCronom) + " milisegundos");
 	}
 }
