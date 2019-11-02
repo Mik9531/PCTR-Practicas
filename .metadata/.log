@@ -12404,3 +12404,364 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-10-27 01:25:42.058 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-27 01:25:51.303
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-27 01:25:51.318
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-27 01:26:09.250
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-27 01:26:11.266
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\migue'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-10-27 09:24:36.861 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-27 09:24:45.430
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-27 09:24:45.445
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-27 09:24:59.077
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-27 09:25:01.062
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\migue'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-10-28 15:06:03.399 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\migue\eclipse-workspace -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-28 15:06:08.758
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-28 15:06:08.774
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-10-28 15:06:25.176
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:25.566
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:25.582
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:27.269
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:27.301
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-28 15:06:28.004
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\migue'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:28.269
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:28.426
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:28.488
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:28.504
+!MESSAGE Save JSON notifications content to cache file C:\Users\migue\eclipse-workspace\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:29.262
+!MESSAGE BrowserCore initialized.
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:29.732
+!MESSAGE Icon https://vaadin.com/documents/10187/10395/tori-icon-blue-bg-90px/4597dffb-3868-4711-b422-8fc3e71844e6?t=1394217295000 is downloaded
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:30.404
+!MESSAGE Image https://cdn2.hubspot.net/hubfs/1840687/pwa-business-app.jpg is downloaded
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:32.088
+!MESSAGE Image https://cdn2.hubspot.net/hubfs/1840687/Blog/alejandro/2019/IMG_3753.jpg is downloaded
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:32.242
+!MESSAGE Image https://cdn2.hubspot.net/hubfs/1840687/blog%20700%20x%20366@2x.png is downloaded
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:33.444
+!MESSAGE Image https://vaadin.com/image/image_gallery?img_id=3851299&t=1385741714872 is downloaded
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:33.517
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 15:06:56.146
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-10-28 15:07:07.030
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-10-28 15:07:07.104
+!MESSAGE IvyDE plugin started
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.625
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.625
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.656
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.656
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.672
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.687
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.703
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.719
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.719
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.734
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.750
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.766
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.766
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.781
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.781
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.797
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.812
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-10-28 16:59:19.812
+!MESSAGE Removed all models from server.
+!SESSION 2019-11-02 01:22:56.119 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data C:\Users\migue\eclipse-workspace -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-11-02 01:23:10.286
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-11-02 01:23:10.305
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-11-02 01:23:34.337
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:23:35.045
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:23:35.067
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:23:37.267
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:23:37.413
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-02 01:23:38.204
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\migue'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:23:38.662
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:23:38.760
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:23:38.862
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:23:38.933
+!MESSAGE Save JSON notifications content to cache file C:\Users\migue\eclipse-workspace\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:23:39.089
+!MESSAGE BrowserCore initialized.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:23:40.280
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:24:05.452
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-11-02 01:33:55.616
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-11-02 01:33:55.660
+!MESSAGE IvyDE plugin started
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.522
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.542
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.554
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.565
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.578
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.586
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.596
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.604
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.614
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.622
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.630
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.638
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.649
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.657
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.665
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.673
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.682
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.691
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.699
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.707
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.717
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 01:37:36.727
+!MESSAGE Removed all models from server.
+!SESSION 2019-11-02 10:58:03.639 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-11-02 10:58:15.835
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-11-02 10:58:15.850
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-11-02 10:58:50.924
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 10:58:51.745
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 10:58:51.789
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 10:58:55.194
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 10:58:55.288
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 10:58:56.694
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 10:58:56.726
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 10:58:56.757
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 10:58:56.882
+!MESSAGE Save JSON notifications content to cache file C:\Users\migue\eclipse-workspace\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 10:58:57.538
+!MESSAGE BrowserCore initialized.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-02 10:58:58.616
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\migue'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 10:58:59.225
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-02 10:59:23.109
+!MESSAGE All vaadin 7+ projects : []

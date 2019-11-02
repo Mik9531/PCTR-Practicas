@@ -5,19 +5,15 @@
 		<item key="DIALOG_Y_ORIGIN" value="9"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item key="dialogHeight" value="943"/>
-		<item key="dialogWidth" value="1162"/>
+		<item key="dialogHeight" value="-1"/>
+		<item key="dialogWidth" value="-1"/>
 		<list key="textEntries">
-			<item value="1"/>
 		</list>
 		<list key="orderedElements">
-			<item value="org.eclipse.pde.ui.MainPreferencePage"/>
 		</list>
 		<list key="orderedProviders">
-			<item value="org.eclipse.ui.preferences"/>
 		</list>
 		<list key="textArray">
-			<item value="plugin"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">

@@ -26,14 +26,10 @@ public class matVectorConcurrente implements Runnable {
 				suma += columna[j] * matriz[i][j];
 
 			}
-			
+
 			resultado[i] = suma;
 
 		}
-		
-			
-		
-		
 
 	}
 
@@ -86,13 +82,12 @@ public class matVectorConcurrente implements Runnable {
 			System.out.println("Interrupted");
 		}
 
-		
 		for (int i = 0; i < resultado.length; i++) {
 			System.out.print("|" + resultado[i] + "|\n");
 		}
-		
+
 		System.out.println("");
-		
+
 		long finCronom = System.currentTimeMillis(); // se para el cronometro
 		d.setTime(finCronom);
 		System.out.println("Acabando trabajo tras " + (finCronom - inicCronom) + " milisegundos");
