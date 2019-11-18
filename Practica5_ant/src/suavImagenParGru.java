@@ -29,7 +29,7 @@ public class suavImagenParGru{
 		}
 		int nNuc = Runtime.getRuntime().availableProcessors(); 
 		float Cb = x.nextFloat(); //Introducimos el coeficiente de bloqueo
-		int tamPool = (int)(nNuc/(1-Cb)); //Aplicamos Subramanian
+		int tamPool = (int)(nNuc/(1-0)); //Aplicamos Subramanian
 		int tVentana    = n/tamPool;
 		int linf        = 0;
 		int lsup        = tVentana;

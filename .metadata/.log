@@ -13812,3 +13812,197 @@ Unexpected character (<) at position 0.
 
 !ENTRY com.vaadin.designer2 1 0 2019-11-10 11:45:39.763
 !MESSAGE Removed all models from server.
+!SESSION 2019-11-17 21:20:15.323 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\migue\eclipse-workspace -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-11-17 21:20:21.548
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-11-17 21:20:21.568
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-11-17 21:20:39.003
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-17 21:20:39.347
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-17 21:20:39.378
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-17 21:20:40.974
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-17 21:20:41.105
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-17 21:20:42.080
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\migue'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-17 21:20:42.362
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-17 21:20:42.393
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-17 21:20:42.455
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-17 21:20:42.518
+!MESSAGE BrowserCore initialized.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-17 21:20:42.612
+!MESSAGE Save JSON notifications content to cache file C:\Users\migue\eclipse-workspace\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-17 21:20:43.297
+!MESSAGE Image https://cdn2.hubspot.net/hubfs/1840687/vaadin-devoxx-2019.jpg is downloaded
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-17 21:20:43.919
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-11-17 21:20:55.177
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-11-17 21:20:55.276
+!MESSAGE IvyDE plugin started
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-17 21:21:09.452
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY org.eclipse.ui 4 0 2019-11-17 21:59:01.237
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4711)
+	at org.eclipse.swt.SWT.error(SWT.java:4626)
+	at org.eclipse.swt.SWT.error(SWT.java:4597)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:351)
+	at org.eclipse.swt.widgets.Control.setFocus(Control.java:3451)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setFocus(AbstractAnnotationHover.java:214)
+	at org.eclipse.jface.text.AbstractInformationControlManager.showInformationControl(AbstractInformationControlManager.java:1246)
+	at org.eclipse.jface.internal.text.StickyHoverManager.showInformationControl(StickyHoverManager.java:262)
+	at org.eclipse.jface.internal.text.InformationControlReplacer.showInformationControl(InformationControlReplacer.java:164)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1134)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractInformationControlManager.setInformation(AbstractInformationControlManager.java:431)
+	at org.eclipse.jface.internal.text.InformationControlReplacer.computeInformation(InformationControlReplacer.java:116)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractInformationControlManager.showInformation(AbstractInformationControlManager.java:1091)
+	at org.eclipse.jface.internal.text.InformationControlReplacer.replaceInformationControl(InformationControlReplacer.java:103)
+	at org.eclipse.jface.text.AbstractInformationControlManager.replaceInformationControl(AbstractInformationControlManager.java:1268)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.replaceInformationControl(AbstractHoverInformationControlManager.java:794)
+	at org.eclipse.jface.text.TextViewerHoverManager.replaceInformationControl(TextViewerHoverManager.java:311)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$Closer.lambda$1(AbstractHoverInformationControlManager.java:296)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.406
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.422
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.437
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.453
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.469
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.484
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.500
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.515
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.515
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.531
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.547
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.562
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.562
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.578
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.578
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.594
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.609
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.609
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.625
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.625
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.640
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.656
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.656
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.672
+!MESSAGE Removed all models from server.
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.672
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2019-11-18 01:05:35.687
+!MESSAGE Removed all models from server.

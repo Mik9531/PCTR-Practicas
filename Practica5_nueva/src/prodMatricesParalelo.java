@@ -1,105 +1,89 @@
-import java.util.Date;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+
+/**
+* Programa que se encarga de calcular el producto de dos matrices de forma paralela.
+
+* @author Miguel Afán Espinosa
+*/
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.concurrent.*;
+import java.util.*;
 
 public class prodMatricesParalelo implements Runnable {
 
-	int inicioi, fini;
-	static int suma = 0;
-	public static int[][] matriz1 = new int[10][10];
-	public static int[][] matriz2 = new int[10][10];
-	public static int[][] resultado = new int[10][10];
+	private static int[][] matz1;
+	private static int[][] matz2;
+	private static int[][] sol;
+	private int fila, end;
+	private static int N;
 
-	public prodMatricesParalelo() {
-	}
+	/**
+	 * 
+	 * @param hilo corresponde al número de hilos
+	 */
+	public prodMatricesParalelo(int hilo, int end) {
 
-	public prodMatricesParalelo(int inicioi, int fini) {
-		this.inicioi = inicioi;
-		this.fini = fini;
+		this.fila = hilo;
+		this.end = end;
 
-	};
-
-	public void run() {
-
-		for (int i = inicioi; i <= fini; i++) {
-
-			for (int j = 0; j < matriz1.length; j++) {
-
-				suma += matriz1[i][j] * matriz2[i][j];
-
-				resultado[i][j] = suma;
-
-			}
-
-		}
 	}
 
 	/**
-	 * Main
-	 * 
-	 * @param args
-	 * @throws InterruptedException
+	 * Metodo run donde se realizara el producto de la matiz y el vector
 	 */
+	public void run() {
+
+		for (int i = fila; i < end; ++i)
+			for (int j = 0; j < N; ++j)
+				sol[i][j] += matz1[i][j] * matz2[i][j];
+	}
+
+	private static void Filler() {
+		N = 5;
+		Random r = new Random();
+		sol = new int[N][N];
+
+		matz1 = new int[N][N];
+		matz2 = new int[N][N];
+		for (int i = 0; i < N; ++i)
+			for (int j = 0; j < N; ++j)
+				matz1[i][j] = (int) (r.nextInt() * 10 + 1);
+
+		for (int i = 0; i < N; ++i)
+			for (int j = 0; j < N; ++j)
+				matz2[i][j] = (int) (r.nextInt() * 10 + 1);
+	}
+
 	public static void main(String[] args) throws Exception {
 
-		int nNuc = Runtime.getRuntime().availableProcessors();
-		float Cb = 0;
-		int tamPool = (int) (nNuc / (1 - Cb));
-		 ThreadPoolExecutor ept = new ThreadPoolExecutor(
-		    	    tamPool, 
-		    	    tamPool,
-		    	    0L,
-		            TimeUnit.MILLISECONDS, 
-		            new LinkedBlockingQueue<Runnable>());
-		    ept.prestartAllCoreThreads();
-		 
-		for (int i = 0; i < matriz1.length; i++) {
-			for (int j = 0; j < matriz1.length; j++) {
-//				matriz[i][j] = (int) (Math.random() * 1000);
-				matriz1[i][j] = 1;
+		Filler();
+		int nTareas = Runtime.getRuntime().availableProcessors();
+		int tVentana = (int) Math.ceil((matz1.length * 1.) / nTareas);
+		int start = 0;
+		int end = 0;
+		boolean tareas = true;
+		Date d = new Date();
+		DateFormat dd = new SimpleDateFormat("HH:mm:ss");
+		long ini = System.nanoTime();
+		d.setTime(ini);
+		ExecutorService exe = Executors.newFixedThreadPool(nTareas);
 
+		for (int i = 0; i < nTareas; ++i) {
+			start = i * tVentana;
+			end = (i + 1) * tVentana;
+			if (tareas) {
+				tareas = (end < matz1.length);
+				end = (tareas) ? end : matz1.length;
+				exe.submit(new prodMatricesParalelo((int) start, (int) end));
 			}
 		}
 
-		for (int i = 0; i < matriz2.length; i++) {
-			for (int j = 0; j < matriz2.length; j++) {
-//				matriz[i][j] = (int) (Math.random() * 1000);
-				matriz2[i][j] = 1;
+		exe.shutdown();
 
-			}
-		}
-
-//		for (int i = 0; i < matriz1.length; i++) {
-//			for (int j = 0; j < matriz1.length; j++) {
-//				System.out.println(matriz1[i][j]);
-//			}
-//		}
-
-//		for (int i = 0; i < columna.length; i++) {
-//			System.out.println(columna[i]);
-//		}
-
-		Runnable runnable1 = new prodMatricesParalelo(0, 4);
-		Runnable runnable2 = new prodMatricesParalelo(5, 9);
-		Thread h1 = new Thread(runnable1);
-		Thread h2 = new Thread(runnable2);
-
-		new Thread(h1).start();
-		new Thread(h2).start();
-		try {
-			h1.join();
-			h2.join();
-		} catch (Exception e) {
-			System.out.println("Interrupted");
-		}
-
-		for (int i = 0; i < resultado.length; i++) {
-			for (int j = 0; j < resultado.length; j++) {
-				System.out.print("|" + resultado[i][j] + "|\n");
-			}
-		}
-		System.out.println(nNuc);
+		long fin = System.nanoTime();
+		d.setTime(fin);
+		System.out.println("Terminado : " + " tras " + (fin - ini) / 1.0E9 + " seg ");
 
 	}
 }

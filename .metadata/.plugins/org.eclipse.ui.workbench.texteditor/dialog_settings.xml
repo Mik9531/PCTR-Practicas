@@ -2,12 +2,15 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="prest"/>
+		<item key="selection" value="vecz"/>
 		<item key="casesensitive" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="wrap" value="true"/>
 		<item key="wholeword" value="false"/>
 		<list key="findhistory">
+			<item value="vecz"/>
+			<item value="runnable"/>
+			<item value="in"/>
 			<item value="prest"/>
 			<item value="escalaVPar"/>
 			<item value="Codigo"/>
@@ -20,7 +23,6 @@
 			<item value="escala"/>
 			<item value="escalaVectorParalelo"/>
 			<item value="con"/>
-			<item value="="/>
 		</list>
 		<list key="replacehistory">
 			<item value="prodEscalarParalelo"/>

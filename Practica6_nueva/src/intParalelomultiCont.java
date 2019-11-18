@@ -1,13 +1,12 @@
-/**
-* Programa que usa el metodo de MonteCarlo para hallar aproximaciones con la interfaz Callable
+// Miguel Afán Espinosa
+// Practica 7
+// intParalelomultiCont.java
 
-* @author Miguel Afán Espinosa
-*/
+
 
 import java.util.*;
 import java.util.concurrent.*;
-
-public class intParaleloFutureCont{
+public class intParalelomultiCont{
 	public static Scanner leer = new Scanner (System.in);
 	public static Object c = new Object(); 
 	public static double n,resultado;
@@ -26,7 +25,7 @@ public class intParaleloFutureCont{
 		new LinkedBlockingQueue<Runnable>());
 		long inicTiempo = System.currentTimeMillis();
 		for (int i=0; i<tamPool; i++){ 
-		Future<Double> future = ejecutor.submit(new Hilo(linf,lsup)); 
+		ejecutor.execute(new Hilo(linf,lsup));
 		linf = lsup;
 		lsup = lsup + tVentana;
 		}
@@ -36,14 +35,14 @@ public class intParaleloFutureCont{
 		System.out.println("Calculo finalizado en "+tiempoTotal+" milisegundos");
 		System.out.println("El area de f(x) = sen(x) es: "+resultado);
 	}
-	public static class Hilo implements Callable<Double>{
+	public static class Hilo implements Runnable{
 		private int linf;
 		private int lsup;
 		public Hilo(int linf, int lsup){ //Constructor
 		this.linf = linf;
 		this.lsup = lsup;
 		}
-		public Double call(){ 
+		public void run(){ 
 			int dentro = 0; 
 			synchronized(c){ 
 				for (int i=linf; i<lsup; i++){
@@ -52,7 +51,7 @@ public class intParaleloFutureCont{
 				x=Math.sin(x);
 				if(x <= y) dentro++;
 				}
-				return resultado = (double)dentro/n + resultado; 
+				resultado = (double)dentro/n + resultado;
 			}
 		}	
 	}

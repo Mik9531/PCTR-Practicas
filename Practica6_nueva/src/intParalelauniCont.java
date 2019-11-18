@@ -1,16 +1,17 @@
-/**
-* Programa que usa el metodo de MonteCarlo para hallar aproximaciones con la interfaz Callable
+// Miguel Afán Espinosa
+// Practica 7
+// intParalelauniCont.java
 
-* @author Miguel Afán Espinosa
-*/
+
 
 import java.util.*;
 import java.util.concurrent.*;
 
-public class intParaleloFutureCont{
+public class intParalelauniCont{
 	public static Scanner leer = new Scanner (System.in);
 	public static Object c = new Object(); 
-	public static double n,resultado;
+	public static double n;
+	public static int dentro = 0; 
 	public static void main(String[] args){
 		System.out.println("Introduce el numero de puntos: ");
 		n = leer.nextDouble();
@@ -21,12 +22,12 @@ public class intParaleloFutureCont{
 		int linf = 0;
 		int lsup = tVentana;
 		ThreadPoolExecutor ejecutor = new ThreadPoolExecutor( 
-		tamPool, tamPool, 0L, 
+		tamPool, tamPool, 0L,
 		TimeUnit.MILLISECONDS,
 		new LinkedBlockingQueue<Runnable>());
 		long inicTiempo = System.currentTimeMillis();
 		for (int i=0; i<tamPool; i++){ 
-		Future<Double> future = ejecutor.submit(new Hilo(linf,lsup)); 
+		ejecutor.execute(new Hilo(linf,lsup));
 		linf = lsup;
 		lsup = lsup + tVentana;
 		}
@@ -34,17 +35,17 @@ public class intParaleloFutureCont{
 		while(!ejecutor.isTerminated()){}
 		long tiempoTotal = System.currentTimeMillis()-inicTiempo;
 		System.out.println("Calculo finalizado en "+tiempoTotal+" milisegundos");
+		double resultado = (double)dentro/n;
 		System.out.println("El area de f(x) = sen(x) es: "+resultado);
 	}
-	public static class Hilo implements Callable<Double>{
+	public static class Hilo implements Runnable{
 		private int linf;
 		private int lsup;
-		public Hilo(int linf, int lsup){ //Constructor
+		public Hilo(int linf, int lsup){ 
 		this.linf = linf;
 		this.lsup = lsup;
 		}
-		public Double call(){ 
-			int dentro = 0; 
+		public void run(){ 
 			synchronized(c){ 
 				for (int i=linf; i<lsup; i++){
 				double x=Math.random();
@@ -52,7 +53,6 @@ public class intParaleloFutureCont{
 				x=Math.sin(x);
 				if(x <= y) dentro++;
 				}
-				return resultado = (double)dentro/n + resultado; 
 			}
 		}	
 	}
