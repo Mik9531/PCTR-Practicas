@@ -1,6 +1,6 @@
-// Miguel Afán Espinosa
-// Practica 7
-// intParalelauniCont.java
+/**
+ * @author Miguel Afán Espinosa
+ */
 
 
 

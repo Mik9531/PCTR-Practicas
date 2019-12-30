@@ -1,6 +1,7 @@
-// Miguel Afán Espinosa
-// Practica 7
-// ServidorHilosinPool.java
+/**
+ * @author Miguel Afán Espinosa
+ */
+
 
 
 

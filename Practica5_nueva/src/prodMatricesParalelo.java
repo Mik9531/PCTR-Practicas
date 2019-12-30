@@ -1,7 +1,6 @@
 
 /**
 * Programa que se encarga de calcular el producto de dos matrices de forma paralela.
-
 * @author Miguel Afán Espinosa
 */
 

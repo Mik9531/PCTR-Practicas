@@ -1,6 +1,5 @@
 /**
 * Programa que se encarga de calcular la cantidad de números perfectos en un rango dado.
-
 * @author Miguel Afán Espinosa
 */
 
